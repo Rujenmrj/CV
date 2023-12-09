@@ -18,7 +18,8 @@ body{
     min-width: max-content;
     display: flex;
     background: var(--second-color);
-    position: fixed;
+    /* position: sticky; */
+    /* top: -100px; */
     justify-content: flex-end;
     float: left;
     z-index: 3;
@@ -30,6 +31,7 @@ body{
 
 #menu-icon{
     display: none;
+    line-height: 5;
 }
 
 .navigators {
@@ -90,21 +92,50 @@ body{
     width: 250px;
     justify-content: space-between;
 }
-.talk-btn, .hire-btn{
+.btn{
     transition: 0.5s;
     font-size: 20px;
     padding: 8px 15px;
     margin-top: 20px;
+    position: relative;
     border: 2px solid var(--accent-color);
     background-color: var(--accent-color);
     color:  var(--main-color);
     border-radius: 10px;
     font-weight: bold;
+    z-index: 1;
+    overflow: auto;
+}
+.talk-btn{
+    background: transparent;
+    color: var(--accent-color);
+    transition: 0.5s;
 }
 
-.talk-btn:hover, .hire-btn:hover{
+.btn::before{
+    content: '';
+    background: var(--main-color);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 100%;
+    display: flex;
+    z-index: -1;
+    border-radius: 8px;
+    transition: width 0.5s linear,color 0.5s linear;
+}
+.btn:hover::before{
+    width: 100%;
+}
+.btns .talk-btn:hover{
+    color: var(--main-color);
+}
+.btn:nth-child(2)::before{
+    background: var(--accent-color);
+}
+.btn:hover{
     color: var(--accent-color);
-    background-color:  var(--main-color);
 }
 
 .side-img{
