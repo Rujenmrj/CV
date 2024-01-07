@@ -8,21 +8,21 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="nav-bar">
-    <h2>Rujen.</h2>
-    <nav>
-        <div class="bx bx-menu" id="menu-icon">
-            <img src="img/menu-icon.png" alt="">
+    <header>
+        <div class="nav-bar">
+            <a class="logo">Rujen.</a>
+            <nav>
+                <div class="bx bx-menu" id="menu-icon">
+                    <img src="img/menu-icon.png" alt="">
+                </div>
+                <!-- <div class="navigators"> -->
+                <a href="index.html" class="active">Home</a>
+                <a href="#">Project</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            <!-- </div> -->
+        </nav>
         </div>
-        <ul class="navigators">
-            <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
     </header>
     <main class="main-content">
         <div class="content">
@@ -30,17 +30,22 @@
             <div class="text">
                 <div class="cursor"></div>
                 <h2 class="font_animation">Frontend Developer</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cumque tempore cupiditate quia eius. Similique maxime itaque, perspiciatis magni inventore, quis hic consectetur delectus dolorem sunt sapiente quo accusamus ad.</p>
+                <p>The nature of a portfolio is that it is always a work in progress
+                </p>
             </div>
             <div class="btns">
-                <button class="hire-btn btn">Hire Me</button>
-                <button class="talk-btn btn" onclick="location.href = 'contact.html';">Let's Talk</button>
+                <button class="hire-btn btn" onclick="location.href = 'contact.html';">Hire Me</button>
+                <button class="talk-btn btn" onclick="location.href = '#project';">Why me?</button>
             </div>
         </div>
         <div class="side-img">
-        <img src="beru.jpg" alt="beru">
+            <img src="beru.jpg" alt="beru">
         </div>
     </main>
+
+    <div id="project">
+        faskldjfasjdf
+    </div>
     <footer class="footer">
         <div class="social_media">
             <a href="https://www.facebook.com/rujen.maharjan.9/"><img src="img/insta.png" alt="instagram Link"></a>
@@ -50,5 +55,6 @@
             <a href="https://www.facebook.com/rujen.maharjan.9/"><img src="img/discord.png" alt="Facebook Link"></a>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

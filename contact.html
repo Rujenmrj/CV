@@ -8,17 +8,42 @@
 </head>
 <body>
     <header class="nav-bar">
-        <h2>Rujen.</h2>
+        <a class="logo">Rujen.</a>
         <nav>
-            <ul class="navigators">
-                <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="contact.html" style="color: rgb(90, 195, 255);">Contact</a></li>
-                </ul>
-            </div>
+            <div class="bx bx-menu" id="menu-icon">
+            <img src="img/menu-icon.png" alt="">
+        </div>
+        <!-- <div class="navigators"> -->
+            <a href="index.html">Home</a>
+            <a href="#">Project</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="about.html">About</a>
+            <!-- </div> -->
         </nav>
     </header>
+    <main class="main-content main-content-column">
+        <div class="me">
+            <h1>Contact <span>Me!</span></h1>
+        </div>
+        <div>
+            <form action="contactme.php" method="post" class="center-content">
+                <input type="text" name="full_name" class="textbox spacex1 item1" id="name" placeholder="Full Name">
+                <input type="email" name="email" class="textbox spacex1 item2" id="mail" placeholder="Email">
+                <input type="tel" name="contact-number" class="textbox spacex3 item1" id="number" placeholder="Mobile Number">
+                <input type="text" name="subject" class="textbox spacex1 item4" id="sub" placeholder="Subject">   
+                <textarea name="message" class="textbox spacex2 item5" id="detail" cols="30" rows="10" placeholder="Message"></textarea><br>
+                <input type="submit" value="submit" class="item6" id="submit">
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="social_media">
+            <a href="https://www.facebook.com/rujen.maharjan.9/"><img src="img/insta.png" alt="instagram Link"></a>
+            <a href="https://www.facebook.com/rujen.maharjan.9/"><img src="img/linkedin.png" alt="instagram Link"></a>
+            <a href="https://www.facebook.com/rujen.maharjan.9/"><img src="img/fb.png" alt="Facebook Link"></a>
+            <a href="https://www.facebook.com/rujen.maharjan.9/"><img src="img/github.png" alt="Facebook Link"></a>
+            <a href="https://www.facebook.com/rujen.maharjan.9/"><img src="img/discord.png" alt="Facebook Link"></a>
+        </div>
+    </footer>
 </body>
 </html>
