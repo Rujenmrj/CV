@@ -59,7 +59,8 @@ header{
 
 /* index */
 .main-content,#project {
-    min-height: 100vh;
+    margin-top: 10rem;
+    min-height: 60vh;
     padding: 10rem 9% 2rem;
     display: flex;
     font-size:2rem;
@@ -245,6 +246,47 @@ header{
     font-size: 2rem;
     font-weight: bold;
     margin-left: -5rem;
+}
+/* project */
+.main-content-small{
+    min-height: 20vh;
+}
+.main-content-grid-row{
+    display: grid;
+    width: 80%;
+    height: 1rem;
+    grid-auto-flow: row;
+    gap: 3rem;
+}
+.main-content-grid-row video{
+    height: 13rem;
+    padding: 2rem;
+}
+.project{
+    height: 40vh;
+    resize: none;
+    overflow: hidden;
+}
+.full-height{
+    height: 100vh;
+}
+.projectframe{
+    width: 80%;
+    height: 100vh;
+    resize: none;
+    overflow: hidden;
+}
+.project-bg{
+    height: fit-content;
+    transition: transform .3s,box-shadow .1s;
+}
+#project1{
+    margin-top: 7rem;
+    text-align: center;
+}
+.project-bg:hover{
+    transform: translateX(-10px);
+    filter: drop-shadow(7px 20px 3px var(--second-color));
 }
 
 /* footer*/
