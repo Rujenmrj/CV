@@ -10,6 +10,9 @@
     --second-color:rgb(15, 39, 55);
     --accent-color:rgb(90, 195, 255);
     --accent-transparent:rgba(90, 195, 255, 0.469);
+    --html-skills:90%;
+    --css-skills:78%;
+    --js-skills:50%;
 }
 
 html{
@@ -60,7 +63,7 @@ header{
 /* index */
 .main-content,#project {
     margin-top: 10rem;
-    min-height: 60vh;
+    min-height: 65vh;
     padding: 10rem 9% 2rem;
     display: flex;
     font-size:2rem;
@@ -165,7 +168,59 @@ header{
     mix-blend-mode:luminosity;
     border-radius: 40%;
 }
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.skills span{
+    float: right;
+}
+.skills h1{
+    font-size: 5rem;
+}
+.progressbar{
+    width: 60%;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 20px;
+    padding: 8px 15px;
+    margin-top: 20px;
+    position: relative;
+    border: 2px solid var(--accent-color);
+    background-color: var(--main-color);
+    color:  var(--main-color);
+    border-radius: 10px;
+    z-index: 1;
+    overflow: auto;
+}
+.loadbar{
+    content: '';
+    position: absolute;
+    background-color: var(--accent-color);
+    top: 0px;
+    left: 0px;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    z-index: -1;
+    border-radius: 8px;
+    transition: width 0.5s linear,color 0.5s linear;
+    align-items: center;
+    justify-content: end;
+}
 
+.loadbarhtml,.loadbarcss,.loadbarjs{
+    width: 0;
+}
+/* .loadbarcss{
+    width: var(--css-skills);
+}
+.loadbarjs{
+    width: var(--js-skills);
+} */
 
 
 /* about */
